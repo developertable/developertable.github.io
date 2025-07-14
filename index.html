@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="scripts/app.js" defer></script>
+  <title>Tic Tac Toe</title>
+</head>
+<body>
+  <div id="nameRect">
+    <form action="">
+      <label for="player1">Player 1:</label>
+      <input type="text" id="player1" name="player1" class="pColumns" placeholder="Enter name"><br>
+      <label for="player2">Player 2:</label>
+      <input type="text" id="player2" name="player2" class="pColumns" placeholder="Enter name"><br>
+    </form>
+    <h4 class="hdng">Choose your style</h4>
+    <div id="smileyBox">
+      <button class="smiley" onclick="chooseSmiley(0)">🥴</button>
+      <button class="smiley" onclick="chooseSmiley(1)">😶</button>
+      <button class="smiley" onclick="chooseSmiley(2)">😡</button>
+      <button class="smiley" onclick="chooseSmiley(3)">🤬</button>
+      <button class="smiley" onclick="chooseSmiley(4)">😱</button>
+      <button class="smiley" onclick="chooseSmiley(5)">😳</button>
+      <button class="smiley" onclick="chooseSmiley(6)">🤮</button>
+      <button class="smiley" onclick="chooseSmiley(7)">🥳</button>
+      <button class="smiley" onclick="chooseSmiley(8)">🤧</button>
+      <button class="smiley" onclick="chooseSmiley(9)">😋</button>
+      <button class="smiley" onclick="chooseSmiley(10)">⭕</button>
+      <button class="smiley" onclick="chooseSmiley(11)">❌</button>
+    </div>
+    <button id="playerBtn" onclick="printNames()">Submit</button>
+  </div>
+  <div id="gameRect">
+    <h1 class="gameName">TIC</h1>
+    <h1 class="gameName">TAC</h1>
+    <h1 class="gameName">TOE</h1>
+    <div id="gameOverDiv">
+      <div>
+      <h1 id="gameOverText"></h1>
+      <button id="playAgainBtn" onclick="resetAll()">Play Again</button>
+      </div>
+    </div>
+    <div id="gameBox">
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="0"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="1"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="2"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="3"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="4"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="5"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="6"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="7"></div>
+      <div class="gameBlock" onclick= "playerMove(event)" data-index="8"></div>
+    </div>
+  </div>
+  <div id="resultRect">
+      <div id="scoreBox">
+      </div>
+  </div>
+</body>
+</html>

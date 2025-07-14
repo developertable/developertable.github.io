@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  justify-items: center;
+  align-content: center;
+  display: flex;
+}
+#nameRect {
+width: 25%;
+height: 100vh;
+background: linear-gradient(#484848, #4480da, #f8af31);
+color: #fff;
+font-size: 3rem;
+justify-items: center;
+align-content: center;
+padding-left: 50px;
+}
+#smileyBox {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 1px solid #fff;
+}
+.smiley {
+  text-align: center;
+  align-content: center;
+  cursor: pointer;
+  border: 1px solid #fff;
+  background: none;
+  font-size: 3rem;
+}
+.hdng {
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+}
+#namesBox {
+  width: 100%;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 3rem;
+}
+.pColumns {
+  font-size: 1.5rem;
+}
+#playerBtn {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+  background: #b3750c;
+}
+#gameRect {
+  width: 50%;
+  height: 100vh;
+  background: linear-gradient(#484848, #4480da, #f8af31);
+  justify-items: center;
+  align-content: center;
+}
+.gameName {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #fff;
+  font-size: 4rem;
+}
+#gameBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 50%;
+  height: 50%;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  color: #fff;
+  background: #333;
+}
+.gameBlock {
+  border: 1px solid #fff;
+  text-align: center;
+  align-content: center;
+  font-size: 5rem;
+  font-family: monospace;
+  cursor: pointer;
+}
+#currentPlayer, #gameStatus {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.gameBlock:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#resetBtn {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #b3750c;
+  color: white;
+  border: none;
+}
+
+#resetBtn:hover {
+  background-color: #8f5a09;
+}
+#gameOverDiv {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  width: 400px;
+  height: 200px;
+  z-index: 10;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  justify-content: center;
+  align-items: center;
+}
+#playAgainBtn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  background: #b3750c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#playAgainBtn:hover {
+  background: #8f5a09;
+}
+#gameOverText {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+#resultRect {
+  width: 25%;
+  height: 100vh;
+  background: linear-gradient(#484848, #4480da, #f8af31);
+  color: #fff;
+  padding-right: 50px;
+  font-size: 3rem;
+
+}
+#scoreBox {
+  width: 100%;
+  height: 100vh;
+  justify-items: center;
+  align-content: center;
+}
